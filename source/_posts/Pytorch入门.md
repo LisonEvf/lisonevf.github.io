@@ -175,3 +175,14 @@ batch_size = 5
 train_ds = TensorDataset(inputs, targets)
 train_dl = DataLoader(train_ds, batch_size, shuffle=True)
 ```
+
+```python
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.linear = nn.Linear(1,1)
+
+    def forward(self, x):
+        out = self.linear(x)
+        return out
+```
