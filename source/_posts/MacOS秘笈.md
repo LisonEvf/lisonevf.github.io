@@ -90,7 +90,7 @@ $ defaults write com.apple.finder CreateDesktop -bool true;killall Finder
 $ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-恢复显示
+恢复生成
 
 ``` bash
 $ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
@@ -102,7 +102,7 @@ $ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
 $ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool TRUE
 ```
 
-恢复显示
+恢复生成
 
 ``` bash
 $ defaults delete com.apple.desktopservices DSDontWriteUSBStores
