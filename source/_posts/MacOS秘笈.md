@@ -81,3 +81,30 @@ $ defaults write com.apple.finder CreateDesktop -bool false;killall Finder
 $ defaults write com.apple.finder CreateDesktop -bool true;killall Finder
 ```
 
+
+### 6.禁止或恢复自动生成.DS_Store
+
+禁止在网络文件夹上自动生成.DS_Store
+
+``` bash
+$ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+```
+
+恢复显示
+
+``` bash
+$ defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+```
+
+禁止在移动设备上自动生成.DS_Store
+
+``` bash
+$ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool TRUE
+```
+
+恢复显示
+
+``` bash
+$ defaults delete com.apple.desktopservices DSDontWriteUSBStores
+```
+
